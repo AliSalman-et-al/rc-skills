@@ -27,9 +27,3 @@ Each category maintains separate **User-invoked** and **Model-invoked** sections
 - `skills/other` — General/non-research `.skill` files
 - `skills/misc`, `skills/personal`, `skills/in-progress`, `skills/deprecated` — supporting buckets
 - `.claude-plugin/` — Claude plugin metadata for marketplace installs
-
-## Inspiration
-
-- https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills
-- https://github.com/aipoch/medical-research-skills
-- https://github.com/Aperivue/medsci-skills
