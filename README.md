@@ -2,7 +2,7 @@
 
 Research Consultancy (RC) skills for AI agents, focused on medical research workflows.
 
-This repository is modelled after the structure used in [`mattpocock/skills`](https://github.com/mattpocock/skills) so skills can be distributed and reused consistently.
+This repository is modelled after the structure used in [`mattpocock/skills`](https://github.com/mattpocock/skills), with each skill distributed as a downloadable `.skill` file.
 
 ## Install
 
@@ -10,18 +10,26 @@ This repository is modelled after the structure used in [`mattpocock/skills`](ht
 npx skills@latest add AliSalman-et-al/rc-skills
 ```
 
+## User-invoked skill categories
+
+1. **Evidence Insight** — search strategy design, database selection, evidence-level prioritization, critical appraisal, literature synthesis, and gap identification.
+2. **Protocol Design** — experimental design generation, study type selection, causal inference planning, statistical power calculation, and validation strategy.
+3. **Data Analysis** — R/Python bioinformatics code generation, statistical modeling, data cleaning pipelines, machine learning workflows, and result visualization.
+4. **Academic Writing** — SCI manuscript drafting, methods/results/discussion writing, meta-analysis narrative, cover letters, and abstract generation.
+5. **Other (General / Non-Research)** — general skills that do not fall into categories 1–4.
+
 ## Repository layout
 
-- `skills/engineering` — promoted engineering bucket (currently unused)
-- `skills/productivity` — promoted productivity bucket (used for RC medical research skills)
+- `skills/evidence-insight` — Evidence Insight `.skill` files
+- `skills/protocol-design` — Protocol Design `.skill` files
+- `skills/data-analysis` — Data Analysis `.skill` files
+- `skills/academic-writing` — Academic Writing `.skill` files
+- `skills/other` — General/non-research `.skill` files
 - `skills/misc`, `skills/personal`, `skills/in-progress`, `skills/deprecated` — non-promoted buckets
-- `docs/` — human-facing docs for promoted skills
 - `.claude-plugin/` — Claude plugin metadata for marketplace installs
 
-## Current promoted skills
+## Inspiration
 
-### Productivity
-
-**User-invoked**
-
-- **[setup-rc-skills](./skills/productivity/setup-rc-skills/SKILL.md)** — one-time setup for configuring issue tracking, triage labels, and document location for RC medical research workflows.
+- https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills
+- https://github.com/aipoch/medical-research-skills
+- https://github.com/Aperivue/medsci-skills

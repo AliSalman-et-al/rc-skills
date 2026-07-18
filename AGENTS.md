@@ -1,15 +1,20 @@
 Skills in this repository are intended for Research Consultancy (RC) medical research workflows.
 
-Skills are organized into bucket folders under `skills/`:
+User-invoked skill categories under `skills/`:
 
-- `engineering/` — promoted engineering skills
-- `productivity/` — promoted productivity skills
-- `misc/`, `personal/`, `in-progress/`, `deprecated/` — non-promoted buckets
+- `evidence-insight/`
+- `protocol-design/`
+- `data-analysis/`
+- `academic-writing/`
+- `other/`
+
+Each distributed skill should be a downloadable `.skill` file placed in one of the five categories above.
+
+Supporting buckets are also available under `skills/`:
+
+- `misc/`, `personal/`, `in-progress/`, `deprecated/`
 
 Conventions:
 
-- Every skill lives in `skills/<bucket>/<skill-name>/SKILL.md`.
-- Promoted skills (`engineering/`, `productivity/`) are listed in:
-  - top-level `README.md`
-  - `.claude-plugin/plugin.json` `skills` array
-- Promoted skills also have docs pages under `docs/<bucket>/<skill-name>.md`.
+- Keep category listings up to date in top-level `README.md`.
+- Keep `.claude-plugin/plugin.json` metadata aligned with repository purpose.

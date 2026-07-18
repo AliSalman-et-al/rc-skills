@@ -1,11 +1,11 @@
 # Productivity skills
 
-Promoted skills for Research Consultancy (RC) medical research workflows.
+This bucket is currently unused.
 
-## User-invoked
+RC user-invoked categories are tracked directly under:
 
-- **[setup-rc-skills](./setup-rc-skills/SKILL.md)** — configure issue tracker, triage labels, and document location for RC workflows.
-
-## Model-invoked
-
-- _None yet._
+- `skills/evidence-insight/`
+- `skills/protocol-design/`
+- `skills/data-analysis/`
+- `skills/academic-writing/`
+- `skills/other/`
