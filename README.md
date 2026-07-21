@@ -1,5 +1,7 @@
 # Skills for Rigorous Medical Research
 
+[![skills.sh](https://skills.sh/b/AliSalman-et-al/rc-skills)](https://skills.sh/AliSalman-et-al/rc-skills)
+
 Practical agent skills for planning, searching, reviewing, and communicating medical research.
 
 Good research depends on decisions that an agent should not make silently: what question is actually being asked, whether a synthesis is worth doing, how evidence will be found, and whether a manuscript supports its claims. These skills turn those decisions into explicit, repeatable workflows while keeping the researcher in control.
