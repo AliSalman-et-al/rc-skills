@@ -1,24 +1,10 @@
 # Skills for Rigorous Medical Research
 
-[![skills.sh](https://skills.sh/b/AliSalman-et-al/rc-skills)](https://skills.sh/AliSalman-et-al/rc-skills)
-
 Practical agent skills for planning, searching, reviewing, and communicating medical research.
 
 Good research depends on decisions that an agent should not make silently: what question is actually being asked, whether a synthesis is worth doing, how evidence will be found, and whether a manuscript supports its claims. These skills turn those decisions into explicit, repeatable workflows while keeping the researcher in control.
 
 The initial collection focuses on meta-analysis topic development, PubMed searching, evidence discovery, shared research terminology, teaching, and manuscript review. Skills are small, composable, and work with agents that support the Agent Skills format.
-
-## Quickstart (30-second setup)
-
-1. Run the installer:
-
-```bash
-npx skills@latest add AliSalman-et-al/rc-skills
-```
-
-2. Choose the skills and supported agents you want to install them into.
-
-3. Invoke a user-invoked skill, such as `/build-pubmed-search` or `/grill-meta-analysis-topic`, from your agent.
 
 ## Install as a Claude Code plugin
 
@@ -56,11 +42,6 @@ claude plugin update rc-skills@AliSalman-et-al --scope user
 ```
 
 Restart Claude Code after an update.
-
-Two installation styles are available:
-
-- **[skills.sh](https://skills.sh/AliSalman-et-al/rc-skills)** copies selected skills into your environment so you can inspect and adapt them.
-- **The Claude Code plugin** installs the repository as a managed collection that follows published updates.
 
 ## Why these skills exist
 
