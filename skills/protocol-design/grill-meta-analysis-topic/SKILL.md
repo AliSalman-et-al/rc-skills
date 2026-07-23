@@ -6,25 +6,33 @@ disable-model-invocation: true
 
 # Validate a Meta-Analysis Topic
 
-Run a gated viability loop: **grill → research → appraisal → overlap verdict → re-grill**. Use the model-invoked `grilling` skill for the interview and the model-invoked `pubmed` skill for reproducible biomedical searches.
+Run an evidence-led viability loop: **seed → audit → verdict → re-grill → targeted re-audit**. Use the model-invoked `grilling` skill for the interview and the model-invoked `pubmed` skill for reproducible biomedical searches.
 
-## Gate 1 — Reach a shared baseline
+## Operating rule — audit early
 
-Interview the user one decision at a time. Give your recommended answer with a short methodological rationale. Retrieve factual answers; ask the user only for judgments, constraints, and choices.
+Gate 1 creates a provisional search seed; it does not finish the review specification. Default to Gate 2 as soon as the minimum seed exists. Carry uncertainty forward so the published landscape determines which decisions deserve further grilling.
 
-Resolve:
+## Gate 1 — Reach a searchable baseline
 
-- the review type: intervention, exposure, diagnostic, prognostic, prevalence, network, dose-response, or another justified synthesis;
-- population, condition, setting, and exclusions;
-- intervention or exposure and comparator;
-- primary and secondary outcomes, measurement windows, and intended effect measures;
-- eligible study designs, dates, languages, and publication status;
-- the clinical or methodological contribution the user expects;
-- practical constraints: deadline, database access, screening capacity, software, and expertise.
+The minimum search seed has:
 
-Maintain a live one-sentence question, working title, and PICO/PECO/PICOS. When an answer changes one element, revisit every dependent choice.
+- an identifiable population, condition, or clinical context;
+- the focal intervention, exposure, test, prognostic factor, or other synthesis target;
+- an intended outcome domain or quantity to estimate; and
+- enough information to run at least one broad search without inventing a clinical concept.
 
-Present the baseline formulation and ask the user to confirm it. Begin the viability audit only after confirmation.
+A missing comparator does not block the audit when it can be represented as any comparator, usual care, no exposure, or explicit alternatives. Exact setting, exclusions, outcome measure, time point, effect measure, study design, and contribution also remain open when a broad search is possible.
+
+When the minimum seed exists, act in the same turn:
+
+1. State the provisional one-sentence question and compact PICO/PECO/PICOS.
+2. Mark every unresolved element as `[open]` in a decision backlog.
+3. Begin the first broad Gate 2 search.
+4. Let the audit determine the next question.
+
+Ask another Gate 1 question only when a missing answer prevents any meaningful broad search. Ask the single question with the greatest effect on searchability, give your recommended answer with a short methodological rationale, and wait for the user's judgment. Retrieve factual answers instead of asking the user for them.
+
+Maintain the provisional question, working title, PICO/PECO/PICOS, and decision backlog throughout the loop. Search reasonable alternatives for open elements. When an answer or audit finding changes one element, revisit every dependent choice.
 
 ## Gate 2 — Audit the published landscape
 
@@ -73,9 +81,11 @@ Show an overlap matrix comparing the proposed topic with the closest reviews acr
 
 Novelty alone is insufficient. A viable topic must also be clinically meaningful, methodologically coherent, and feasible with the available evidence.
 
-## Gate 4 — Re-grill every proposed pivot
+Before moving on, rank `[open]` decisions by whether they could change overlap, clinical meaning, or analytical feasibility. Carry material open decisions into Gate 4 even when the provisional verdict is viable.
 
-If the topic is already covered or not feasible, continue the one-question-at-a-time interview. Offer a recommended pivot grounded in the gaps found, then wait for the user's choice.
+## Gate 4 — Re-grill material open decisions and pivots
+
+Ask one question about the highest-impact open decision. Give a recommended resolution or pivot grounded in the audit, then wait for the user's choice. If no open decision could materially change the verdict, retain the current formulation.
 
 Consider only distinctions with a defensible rationale, such as:
 
@@ -86,7 +96,7 @@ Consider only distinctions with a defensible rationale, such as:
 - dose-response, diagnostic, prognostic, network, individual-participant-data, cumulative, or living synthesis when the data and question justify it;
 - resolving a documented methodological weakness in prior reviews.
 
-After each accepted change, rewrite the question and repeat the relevant searches. Treat a pivot as viable only after research shows that it is distinct and feasible. Continue until the user confirms a formulation supported by the audit, or accepts that no defensible version is currently available.
+After each accepted change, rewrite the question and repeat only the affected Gate 2 checks. Treat a pivot as viable only after research shows that it is distinct and feasible. Continue the **verdict → re-grill → targeted re-audit** loop until the user confirms a formulation supported by the audit, or accepts that no defensible version is currently available.
 
 ## Deliver the viability brief
 
