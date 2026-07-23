@@ -1,8 +1,8 @@
 {
-  "name": "AliSalman-et-al",
+  "name": "research-consultancy",
   "owner": {
     "name": "Ali Salman",
-    "url": "https://github.com/AliSalman-et-al"
+    "url": "https://github.com/research-consultancy"
   },
   "description": "Research Consultancy medical research skills published as a Claude plugin.",
   "plugins": [
